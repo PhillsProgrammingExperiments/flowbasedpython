@@ -1,0 +1,14 @@
+{
+    "x": {
+        "implementation": "process",
+        "locals": {}
+    },
+    "y": {
+        "implementation": "process",
+        "locals": {}
+    },
+    "z": {
+        "implementation": "process",
+        "locals": {}
+    }
+}

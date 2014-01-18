@@ -1,0 +1,24 @@
+{
+    "configs": {
+        "thread": [
+            {
+                "module": "threading",
+                "class": "Thread"
+            },
+            {
+                "module": "threading",
+                "class": "Event"
+            }
+        ],
+        "process": [
+            {
+                "module": "multiprocessing",
+                "class": "Process"
+            },
+            {
+                "module": "multiprocessing",
+                "class": "Event"
+            }
+        ]
+    }
+}

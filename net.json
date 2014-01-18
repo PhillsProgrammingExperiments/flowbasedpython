@@ -1,0 +1,46 @@
+{
+    "types": {
+        "input_generator": {
+            "module": "nodes.input_node",
+            "class": "InputNode",
+            "inputs": 1,
+            "outputs": 1
+        },
+        "processor": {
+            "module": "nodes.processing_node",
+            "class": "ProcessingNode",
+            "inputs": 1,
+            "outputs": 1
+        },
+        "output_printer": {
+            "module": "nodes.output_node",
+            "class": "OutputNode",
+            "inputs": 1,
+            "outputs": 1
+        }
+    },
+    "nodes": {
+        "x": {
+            "type": "input_generator",
+            "instances": 1
+        },
+        "y": {
+            "type": "processor",
+            "instances": 2
+        },
+        "z": {
+            "type": "output_printer",
+            "instances": 1
+        }
+    },
+    "edges": [
+        {
+            "src": "x",
+            "dest": "y"
+        },
+        {
+            "src": "y",
+            "dest": "z"
+        }
+    ]
+}
